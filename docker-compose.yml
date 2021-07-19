@@ -3,14 +3,21 @@ version: "2"
 volumes:
   images:
   config:
+  docker:
 
 services:
   app:
     build: app
+    restart: no
     privileged: true
     volumes:
       - images:/images
       - config:/root/.balena
+      - docker:/var/lib/docker
+    tmpfs:
+      - /tmp
+      - /var/run
+      - /var/log
   web:
     build: web
     ports:

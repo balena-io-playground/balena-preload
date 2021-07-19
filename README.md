@@ -15,7 +15,7 @@ You can one-click-deploy this project to balena using the button below:
 ## Manual Deployment
 
 Alternatively, deployment can be carried out by manually creating a [balenaCloud account](https://dashboard.balena-cloud.com) and application,
-flashing a device, downloading the project and pushing it via either Git or the [balena CLI](https://github.com/balena-io/balena-cli).
+flashing a device, downloading the project and pushing it via the [balena CLI](https://github.com/balena-io/balena-cli).
 
 ## Usage
 
@@ -33,14 +33,14 @@ the Public Device URL in the Dashboard.
 
 ## Environment Variables
 
-|Name|Default|Description|
-|---|---|---|
-|`CLI_API_KEY`||(required) used to authenticate to a balenaCloud user account|
-|`PRELOAD_APP_NAME`||(required) name of the application to preload|
-|`CONFIG_DEVICE_TYPE`||(required) device type slug to override the application device type|
-|`PRELOAD_APP_RELEASE`|`current`|commit hash for a specific application release to preload|
-|`PRELOAD_APP_PINNED`|`y`|pin the preloaded device to the release on provision (`y`/`n`)|
-|`DOWNLOAD_OS_VERSION`|`latest`|balenaOS version, for example `2.32.0` or `2.44.0+rev1`|
-|`CONFIG_NETWORK`|`ethernet`|device network type (`ethernet`/`wifi`)|
-|`CONFIG_WIFI_SSID`||WiFi SSID (network name)|
-|`CONFIG_WIFI_KEY`||WiFi key (password)|
+| Name                  | Default    | Description                                                         |
+| --------------------- | ---------- | ------------------------------------------------------------------- |
+| `CLI_API_KEY`         |            | (required) used to authenticate to a balenaCloud user account       |
+| `PRELOAD_APP_NAME`    |            | (required) name of the application to preload                       |
+| `PRELOAD_DEVICE_TYPE` |            | (required) device type slug to override the application device type |
+| `PRELOAD_APP_RELEASE` | `current`  | commit hash for a specific application release to preload           |
+| `PRELOAD_APP_PINNED`  | `y`        | pin the preloaded device to the release on provision (`y`/`n`)      |
+| `PRELOAD_OS_VERSION`  | `latest`   | balenaOS version, for example `2.32.0` or `2.44.0+rev1`             |
+| `PRELOAD_NETWORK`     | `ethernet` | device network type (`ethernet`/`wifi`)                             |
+| `PRELOAD_WIFI_SSID`   |            | WiFi SSID (network name)                                            |
+| `PRELOAD_WIFI_KEY`    |            | WiFi key (password)                                                 |
